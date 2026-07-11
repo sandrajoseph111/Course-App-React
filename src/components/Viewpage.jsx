@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 const Viewpage = () => {
 
@@ -23,6 +24,7 @@ const Viewpage = () => {
     )
   return (
     <div>
+        <NavigationBar />
         <table class="table">
   <thead>
     <tr>

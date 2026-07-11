@@ -5,14 +5,22 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Register from './components/Register'
 import Viewpage from './components/Viewpage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Register />
-      <Viewpage />
+      <BrowserRouter>
+      
+      <Routes>
+
+
+        <Route path='/' element={<Register/>}/>
+        <Route path='/vi' element={<Viewpage/>}/>
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
